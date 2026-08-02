@@ -23,6 +23,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://seaworthouse.com"),
   title: "SEAWORTHOUSE | Catálogo Anime",
   description:
     "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
@@ -32,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
     images: [
       {
-        url: "/logometa.jpg",
+        url: "https://seaworthouse.com/logometa.jpg",
         width: 1200,
         height: 630,
         alt: "SEAWORTHOUSE — Ropa, figuras y posters de anime",
@@ -43,7 +44,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEAWORTHOUSE",
     description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
-    images: ["/logometa.jpg"],
+    images: ["https://seaworthouse.com/logometa.jpg"],
   },
 };
 
