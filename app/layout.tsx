@@ -30,6 +30,20 @@ export const metadata: Metadata = {
     title: "SEAWORTHOUSE",
     description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
     type: "website",
+    images: [
+      {
+        url: "/logometa.jpg",
+        width: 1200,
+        height: 630,
+        alt: "SEAWORTHOUSE — Ropa, figuras y posters de anime",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "SEAWORTHOUSE",
+    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
+    images: ["/logometa.jpg"],
   },
 };
 
