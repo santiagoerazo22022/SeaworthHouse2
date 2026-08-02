@@ -24,26 +24,26 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://seaworthouse.com"),
-  title: "SEAWORTHOUSE | Catálogo Anime",
+  title: "SEAWORTH HOUSE | Catálogo Anime",
   description:
-    "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
+    "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
   openGraph: {
-    title: "SEAWORTHOUSE",
-    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
+    title: "SEAWORTH HOUSE",
+    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
     type: "website",
     images: [
       {
         url: "https://seaworthouse.com/logometa.jpg",
         width: 1200,
         height: 630,
-        alt: "SEAWORTHOUSE — Ropa, figuras y posters de anime",
+        alt: "SEAWORTH HOUSE — Ropa, figuras y posters de anime",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "SEAWORTHOUSE",
-    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworthouse.",
+    title: "SEAWORTH HOUSE",
+    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
     images: ["https://seaworthouse.com/logometa.jpg"],
   },
 };
