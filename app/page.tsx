@@ -17,9 +17,6 @@ export default async function HomePage() {
     <div className="hud-shell">
       <header className="navbar">
         <div className="container navbar-inner">
-          <Link href="/" className="navbar-brand" aria-label="SEA WORTH HOUSE — Inicio">
-            SEA<span>WORTH</span>HOUSE
-          </Link>
           {IS_DEMO && (
             <nav aria-label="Modo demostración">
               <span className="navbar-demo-badge" aria-label="Modo demostración">
