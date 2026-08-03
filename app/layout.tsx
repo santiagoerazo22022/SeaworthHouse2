@@ -26,18 +26,21 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://seaworthouse.com"),
   title: "SEAWORTH HOUSE | Catálogo Anime",
   description:
-    "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
+    "Descubrí ropa, figuras coleccionables y posters de anime en Seaworth House. Tienda oficial con los mejores productos de tu serie favorita. ¡Entrá y explorá!",
   icons: {
     icon: "/logo.jpeg",
     apple: "/logo.jpeg",
   },
   openGraph: {
     title: "SEAWORTH HOUSE",
-    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
+    siteName: "Seaworth House",
+    description:
+      "Descubrí ropa, figuras coleccionables y posters de anime en Seaworth House. Tienda oficial con los mejores productos de tu serie favorita. ¡Entrá y explorá!",
     type: "website",
+    url: "https://seaworthouse.com",
     images: [
       {
-        url: "https://seaworthouse.com/logo.jpeg",
+        url: "https://seaworthouse.com/logoreducido.jpeg",
         width: 1200,
         height: 630,
         alt: "SEAWORTH HOUSE — Ropa, figuras y posters de anime",
@@ -47,8 +50,9 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "SEAWORTH HOUSE",
-    description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
-    images: ["https://seaworthouse.com/logo.jpeg"],
+    description:
+      "Descubrí ropa, figuras coleccionables y posters de anime en Seaworth House. Tienda oficial con los mejores productos de tu serie favorita.",
+    images: ["https://seaworthouse.com/logoreducido.jpeg"],
   },
 };
 
