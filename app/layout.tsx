@@ -27,13 +27,17 @@ export const metadata: Metadata = {
   title: "SEAWORTH HOUSE | Catálogo Anime",
   description:
     "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
+  icons: {
+    icon: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
   openGraph: {
     title: "SEAWORTH HOUSE",
     description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
     type: "website",
     images: [
       {
-        url: "https://seaworthouse.com/logometa.jpg",
+        url: "https://seaworthouse.com/logo.jpeg",
         width: 1200,
         height: 630,
         alt: "SEAWORTH HOUSE — Ropa, figuras y posters de anime",
@@ -44,7 +48,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "SEAWORTH HOUSE",
     description: "Ropa, figuras y posters de anime. Catálogo oficial Seaworth House.",
-    images: ["https://seaworthouse.com/logometa.jpg"],
+    images: ["https://seaworthouse.com/logo.jpeg"],
   },
 };
 
