@@ -21,6 +21,9 @@ export default function ProductModal({
     description: product?.description ?? "",
     category: product?.category ?? (categories[0]?.id ?? ""),
     price: product?.price ?? 0,
+    priceDisplay: product?.price
+      ? product.price.toLocaleString("es-AR", { maximumFractionDigits: 0 })
+      : "",
     discountPercentage: product?.discountPercentage ?? 0,
     imageUrl: product?.imageUrl ?? "",
     variantsRaw: product?.variants?.join(", ") ?? "",
@@ -143,12 +146,17 @@ export default function ProductModal({
               <div className="form-group">
                 <label className="form-label">Precio Base (ARS) *</label>
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   className="form-input"
-                  min={0}
-                  step={100}
-                  value={form.price}
-                  onChange={(e) => set("price", e.target.value)}
+                  placeholder="Ej: 25.000"
+                  value={form.priceDisplay}
+                  onChange={(e) => {
+                    const raw = e.target.value.replace(/\./g, "").replace(/\D/g, "");
+                    const numeric = raw === "" ? 0 : parseInt(raw, 10);
+                    const formatted = raw === "" ? "" : numeric.toLocaleString("es-AR", { maximumFractionDigits: 0 });
+                    setForm((prev) => ({ ...prev, price: numeric, priceDisplay: formatted }));
+                  }}
                 />
                 {errors.price && (
                   <span style={{ fontSize: "0.75rem", color: "#ff5252" }}>
