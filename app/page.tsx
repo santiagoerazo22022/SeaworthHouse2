@@ -53,7 +53,7 @@ export default async function HomePage() {
           </p>
           <p className="footer-contact">
             <a
-              href="https://wa.me/5491112345678"
+              href={`https://wa.me/${process.env.NEXT_PUBLIC_WHATSAPP_NUMBER ?? "549XXXXXXXXXX"}`}
               target="_blank"
               rel="noopener noreferrer"
               className="footer-whatsapp-link"
