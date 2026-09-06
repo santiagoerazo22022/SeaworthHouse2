@@ -93,7 +93,7 @@ export default function HeroSection() {
             </svg>
           </h1>
 
-          <span className="hero-title-jp">SEA · WORTH · HOUSE — シーワースハウス</span>
+          <span className="hero-title-jp">SEAWORTH · HOUSE — シーワースハウス</span>
         </div>
       </section>
 
